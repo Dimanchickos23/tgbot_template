@@ -5,12 +5,12 @@ from aiogram import Bot, Dispatcher
 from aiogram.contrib.fsm_storage.memory import MemoryStorage
 from aiogram.contrib.fsm_storage.redis import RedisStorage2
 
-from tgbot.config import load_config
-from tgbot.filters.admin import AdminFilter
-from tgbot.handlers.admin import register_admin
-from tgbot.handlers.echo import register_echo
-from tgbot.handlers.user import register_user
-from tgbot.middlewares.environment import EnvironmentMiddleware
+from tgbot_template.tgbot.config import load_config
+from tgbot_template.tgbot.filters.admin import AdminFilter
+from tgbot_template.tgbot.handlers.admin import register_admin
+from tgbot_template.tgbot.handlers.echo import register_echo
+from tgbot_template.tgbot.handlers.user import register_user
+from tgbot_template.tgbot.middlewares.environment import EnvironmentMiddleware
 
 logger = logging.getLogger(__name__)
 
