@@ -42,6 +42,8 @@ async def main():
     logger.info("Starting bot")
     config = load_config(".env")
 
+    # Чтобы работал Redis brew services start/stop/restart redis
+
     storage = RedisStorage2() if config.tg_bot.use_redis else MemoryStorage()
     bot = Bot(token=config.tg_bot.token, parse_mode='HTML')
     dp = Dispatcher(bot, storage=storage)
