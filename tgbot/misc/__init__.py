@@ -1,1 +1,1 @@
-from .states import Test
+from .states import Survey
