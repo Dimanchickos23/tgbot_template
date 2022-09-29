@@ -10,8 +10,7 @@ from tgbot.config import load_config
 from tgbot.filters.admin import AdminFilter
 from tgbot.handlers.admin import register_admin
 from tgbot.handlers.echo import register_echo
-from tgbot.handlers.user import register_user
-from tgbot.handlers.purchase import register_purchase
+from tgbot.handlers.user_HTML import register_user
 from tgbot.middlewares.environment import EnvironmentMiddleware
 
 
