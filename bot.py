@@ -11,7 +11,7 @@ from tgbot.filters.admin import AdminFilter
 from tgbot.handlers.admin import register_admin
 from tgbot.handlers.echo import register_echo
 from tgbot.handlers.user import register_user
-from tgbot_template.tgbot.handlers.testing import register_test
+from tgbot.handlers.purchase import register_purchase
 from tgbot.middlewares.environment import EnvironmentMiddleware
 
 
@@ -29,7 +29,7 @@ def register_all_filters(dp):
 def register_all_handlers(dp):
     register_admin(dp)
     register_user(dp)
-    register_test(dp)
+    register_purchase(dp)
 
     register_echo(dp)
 
