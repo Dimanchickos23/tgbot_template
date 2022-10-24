@@ -7,8 +7,8 @@ from aiogram import types, Dispatcher, Bot
 from aiogram.dispatcher.filters import Command
 from aiogram.utils.exceptions import BadRequest
 
-from tgbot_template.tgbot.filters.admin import AdminFilter
-from tgbot_template.tgbot.filters.group_chat import IsGroup
+from tgbot.filters.admin import AdminFilter
+from tgbot.filters.group_chat import IsGroup
 
 
 async def read_only_mode(message: types.Message):

@@ -3,8 +3,8 @@ import io
 from aiogram import Dispatcher, types
 from aiogram.dispatcher.filters import Command
 
-from tgbot_template.tgbot.filters.admin import AdminFilter
-from tgbot_template.tgbot.filters.group_chat import IsGroup
+from tgbot.filters.admin import AdminFilter
+from tgbot.filters.group_chat import IsGroup
 
 
 async def set_new_photo(message: types.Message.reply):

@@ -6,17 +6,17 @@ from aiogram.contrib.fsm_storage.memory import MemoryStorage
 from aiogram.contrib.fsm_storage.redis import RedisStorage2
 
 from tgbot.middlewares.environment import EnvironmentMiddleware
-from tgbot_template.tgbot.middlewares.throttling import ThrottlingMiddleware
+from tgbot.middlewares.throttling import ThrottlingMiddleware
 from tgbot.config import load_config
 from tgbot.filters.admin import AdminFilter
-from tgbot_template.tgbot.filters.group_chat import IsGroup
+from tgbot.filters.group_chat import IsGroup
 from tgbot.handlers.admin import register_admin
 from tgbot.handlers.echo import register_echo
 from tgbot.handlers.user import register_user
 from tgbot.handlers.service_messages import register_service_messages
-from tgbot_template.set_bot_commands import set_default_commands
-from tgbot_template.tgbot.handlers.edit_chat import register_edit_chat
-from tgbot_template.tgbot.handlers.moderate_chat import register_moderate_chat
+from set_bot_commands import set_default_commands
+from tgbot.handlers.edit_chat import register_edit_chat
+from tgbot.handlers.moderate_chat import register_moderate_chat
 
 
 logger = logging.getLogger(__name__)
