@@ -2,7 +2,7 @@ from aiogram import Dispatcher
 from aiogram.dispatcher.filters import Command, Text
 from aiogram.types import Message, ReplyKeyboardRemove
 
-from tgbot_template.tgbot.keyboards.reply import menu
+from tgbot.keyboards.reply import menu
 
 
 async def user_start(message: Message):
