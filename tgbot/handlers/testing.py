@@ -3,7 +3,7 @@ from aiogram import types
 from aiogram.dispatcher import FSMContext
 from aiogram.dispatcher.filters import Command
 
-from tgbot_template.tgbot.misc import Test
+from tgbot.misc import Test
 
 
 async def enter_test(message: types.Message):

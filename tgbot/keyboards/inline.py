@@ -1,5 +1,5 @@
 from aiogram.types import InlineKeyboardButton, InlineKeyboardMarkup
-from tgbot_template.tgbot.misc.callback_datas import buy_callback
+from tgbot.misc.callback_datas import buy_callback
 
 # Вариант 1, как в прошлом уроке
 # choice = InlineKeyboardMarkup(inline_keyboard=[

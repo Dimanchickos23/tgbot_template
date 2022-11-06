@@ -4,8 +4,8 @@ from aiogram import Dispatcher
 from aiogram.dispatcher.filters import Command
 from aiogram.types import Message, CallbackQuery
 
-from tgbot_template.tgbot.misc.callback_datas import buy_callback
-from tgbot_template.tgbot.keyboards.inline import choice, pear_keyboard, apples_keyboard
+from tgbot.misc.callback_datas import buy_callback
+from tgbot.keyboards.inline import choice, pear_keyboard, apples_keyboard
 
 
 async def show_items(message: Message):
